@@ -135,3 +135,19 @@ themeButton.addEventListener("click", () => {
 });
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+	origin: "top",
+	distance: "60px",
+	duration: 2500,
+	delay: 400,
+	reset: true,
+});
+
+sr.reveal(".home__data,.footer__info", { delay: 500 });
+sr.reveal(".home__handle", { delay: 700 });
+sr.reveal(".home__social, .home__scroll", { delay: 900, origin: "bottom" });
+sr.reveal(".about__img, .contact__content", { origin: "left" });
+sr.reveal(".about__data, .services__card", { origin: "right" });
+sr.reveal(".skills__content, .work__card, .footer__container", {
+	origin: "bottom",
+});
